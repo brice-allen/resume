@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in Latex
+% Author : Brice Allen
+% Website: https://github.com/brice-allen/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\hypersetup{
+    pdftitle={allenBrice-resume.pdf},
+    pdfpagemode=FullScreen,
+}
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Brice Allen} & Email : \href{mailto:kiewit.dhepj@aleeas.com}{hello@briceallen.com}\\
+  \href{http://www.briceallen.com/}{www.briceallen.com} & Mobile : +1-303-551-4544 \\
+  \href{https://www.linkedin.com/in/brice-allen/}{Linkedin} & \href{https://gitlab.com/briceallen}{Gitlab} $\mid$ \href{https://github.com/brice-allen}{Github}
+ 
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Colorado Denver}{Denver, CO}
+      {Bachelors in Computer Science;  Dean's list}{2019 --2022}
+    \resumeSubheading
+      {Community College of Denver}{Denver, CO}
+      {Computer Information Systems;  Dean's list}{2017 -- 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Auraria Campus}{Denver, CO}
+      {Student Assistant}{August 2017 - December 2019}
+      \resumeItemListStart
+        \resumeItem{Creative Technologist}
+          {
+          \begin{itemize}
+              \item Integrated technology into the classroom.
+              \item Duties include web editing/design, video editing, photography, graphic design,\\ and creating content for digital platforms.
+              \item Personally maintained inventory for all maker space materials, tools, and equipment,\\ including hardware and software. 
+              \item Provided one-on-one attention to students while maintaining overall focus on the group.
+          \end{itemize}}
+        \resumeItem{Information Technology}
+          {\begin{itemize}
+              \item Assisted the Information Technology Department Chair on facility projects.
+              \item Assisted Information Technology Department in setting up and maintaining engineering workstation.
+              \item Provided technical support of applications.
+              \item Responded to helpdesk calls and documented solutions.
+              \item Trained users in PC hardware/software and networks.
+          \end{itemize}} 
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hospitality Industry}{Various Locations}
+      {General Manager | Sommelier | Wine Director}{Jan 2005 - Oct 2017}
+      \resumeItemListStart
+        \resumeItem{Sommelier | Wine Director}
+          {\begin{itemize}
+              \item Certified Sommelier \& Advanced candidate
+              \item Managed a front-of-house staff ranging from six to eighty employees.  
+              \item Requisitioned all materials and supplies needed for front-of-the-house operations. 
+              \item Managed multi-million dollar wine inventories.  
+          \end{itemize}}
+        \resumeItem{General Manager}
+          {\begin{itemize}
+            \item Managed budget and payroll. 
+            \item Led each shift into service, prepared for success. 
+            \item Utilized social media to reach marketing goals. 
+            \item Implemented custom Point of Sales software. 
+            \item Designed and maintained company websites. 
+          \end{itemize}}
+        \resumeItem{Consultant}
+          {Acts as a discreet, private wine buyer for elite clientele across three states.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\begin{multicol}
+  
+\end{multicol}
+  \resumeSubHeadingListStart
+      \resumeSubItem{\href{https://www.ucdenver.io/}{Startled}}
+      {Virtual reality-based exposure therapy. }
+    \resumeSubItem{\href{www.dailydoses.dev}{Daily Doses}}
+      {A medication reminder application. }
+    \resumeSubItem{\href{https://csci-4220.herokuapp.com/}{Spotify Recommendation System}}{Exploratory Data Analysis (EDA) and K-Means Clustering}
+
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: C++, C, Python, Go, JavaScript, Julia, MASM, Rust}
+     \hfill
+    
+   }
+   \item{ \textbf{Technologies}{: Git, Linux/Unix, Docker, Gradle, AWS, Azure, SQL, macOS, Windows, 3D Printing,\\ Virtual Reality, Augmented Reality, Continuous Integration/Delivery}}
+   \item{
+    \textbf{Tools}{: Visual Studio, VSCode, Jetbrains Suite, Unity, Xcode, Adobe Suite, Android Studio,\\ Proxmark3, Maya, Nvidia Jetson AI, Arduino, Raspberry Pi, Ubiquiti Unifi}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
